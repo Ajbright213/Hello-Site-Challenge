@@ -1,0 +1,20 @@
+
+
+
+<body style="background-color: rgb({{ red }}, {{ blue }}, {{green}}
+<h2> Enter an integer between 0 and 255 for each of the 
+<form method="POST" action="{% url 'paint' %">
+    {% csrf_token %}
+
+    {{ form.red_amount.label_tag }}
+    {{ form.red_amount }}
+
+
+    {{ form.blue_amount.label_tag }}
+    {{ form.blue_amount }}
+
+    {{ form.green_amount.label_tag }}
+    {{ form.green_amount }}
+
+    <button type="submit"
+</form>
